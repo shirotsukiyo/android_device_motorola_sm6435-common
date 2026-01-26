@@ -54,6 +54,7 @@ vendor/etc/vintf/manifest/bluetooth_hci.xml|13a5f20e77b01b8f78b916c6efbb4cf6bafa
 vendor/etc/vintf/manifest/bluetooth_sar.xml|6ecdea14f258c198ec1234d966c410beb291236b
 vendor/etc/vintf/manifest/bttpi-saidl.xml|a49eea4c62be9c856dfa842db8f08d2a87ff21dd
 vendor/etc/vintf/manifest/manifest_btaudiocoreservices_qti.xml|99c1c1cef69952852d30be97dd58067471825cbc
+vendor/lib64/hw/audio.bluetooth_qti.default.so|6f43000b9018af2facb494c601359d9f1883457c
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|33fa5dfad99e1de144301e417bb603dd38c77570
 vendor/lib64/hw/android.hardware.bluetooth@aidl-impl-qti.so|53385c0413eb72788ce33a908e42c33622c35eab
 vendor/lib64/hw/mbedtls_qti.so|acefbe60ccc59621ae3b1a7c880979c9672c5997
