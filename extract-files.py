@@ -64,8 +64,6 @@ blob_fixups: blob_fixups_user_type = {
         .apktool_patch('ims-patches'),
     'vendor/bin/init.kernel.post_boot.sh': blob_fixup()
         .regex_replace('ro.boot.using_zram_from_fstab', 'ro.vendor.zram.swapon'),
-    'vendor/etc/sensors/hals.conf': blob_fixup()
-        .add_line_if_missing('sensors.moto_ext.so'),
     ('vendor/etc/media_codecs_parrot_v0.xml', 'vendor/etc/media_codecs_parrot_v1.xml',
         'vendor/etc/media_codecs_parrot_v2.xml', 'vendor/etc/media_codecs_parrot_v3.xml',
         'vendor/etc/media_codecs_ravelin.xml'): blob_fixup()
