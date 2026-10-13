@@ -127,6 +127,19 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.display.snapalloc-impl
 
+DISPLAY_HAL_DIR := hardware/qcom-caf/sm8450-6.6/display/core
+
+PRODUCT_COPY_FILES += \
+    $(DISPLAY_HAL_DIR)/config/sdm_display_resolution_extn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/sdm_display_resolution_extn.xml \
+    $(DISPLAY_HAL_DIR)/snapalloc/resources/camera_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/camera_alignments.json \
+    $(DISPLAY_HAL_DIR)/snapalloc/resources/cpu_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/cpu_alignments.json \
+    $(DISPLAY_HAL_DIR)/snapalloc/resources/default_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/default_alignments.json \
+    $(DISPLAY_HAL_DIR)/snapalloc/resources/display_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/display_alignments.json \
+    $(DISPLAY_HAL_DIR)/snapalloc/resources/formats.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/formats.json \
+    $(DISPLAY_HAL_DIR)/snapalloc/resources/graphics_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/graphics_alignments.json \
+    $(DISPLAY_HAL_DIR)/snapalloc/resources/ubwc_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/ubwc_alignments.json \
+    $(DISPLAY_HAL_DIR)/snapalloc/resources/video_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/video_alignments.json
+
 TARGET_USES_VULKAN := true
 
 # DRM
