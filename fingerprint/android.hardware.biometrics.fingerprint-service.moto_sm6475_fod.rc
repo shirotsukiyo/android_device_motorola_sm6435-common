@@ -1,0 +1,8 @@
+service vendor.fingerprint-moto_sm6475_fod /vendor/bin/hw/android.hardware.biometrics.fingerprint-service.moto_sm6475_fod
+    class late_start
+    user system
+    group system
+    disabled
+
+on property:vendor.hw.fingerprint.status=ok
+    start vendor.fingerprint-moto_sm6475_fod
