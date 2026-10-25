@@ -509,7 +509,6 @@ vendor/etc/media_profiles_parrot_v1.xml
 vendor/etc/media_profiles_parrot_v2.xml
 vendor/etc/media_profiles_parrot_v3.xml
 vendor/etc/media_profiles_ravelin.xml
-vendor/etc/media_profiles_vendor.xml
 
 # Mink-Lowi Interface daemon
 vendor/bin/mlid
