@@ -19,7 +19,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/motorola/sm6475-common',
+    'device/motorola/sm6435-common',
     'hardware/motorola',
     'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sm8450-6.6',
@@ -96,7 +96,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'sm6475-common',
+    'sm6435-common',
     'motorola',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,

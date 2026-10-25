@@ -378,7 +378,7 @@ PRODUCT_PACKAGES += \
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch-service.motorola \
-    vendor.lineage.touch-service.moto_sm6475
+    vendor.lineage.touch-service.moto_sm6435
 
 $(call soong_config_set, MOTOROLA_TOUCH, HIGH_TOUCH_POLLING_PATH, /sys/class/touchscreen/primary/interpolation)
 
@@ -418,11 +418,11 @@ PRODUCT_COPY_FILES += \
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    device/motorola/sm6475-common/vintf/device_framework_matrix.xml \
+    device/motorola/sm6435-common/vintf/device_framework_matrix.xml \
     hardware/motorola/vintf/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix_aidl.xml
-DEVICE_MANIFEST_FILE += device/motorola/sm6475-common/vintf/manifest.xml \
+DEVICE_MANIFEST_FILE += device/motorola/sm6435-common/vintf/manifest.xml \
     $(AUDIO_HAL_DIR)/configs/parrot/manifest_audio_qti_services.xml
 
 # Virtualization
@@ -454,4 +454,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/sm6475-common/sm6475-common-vendor.mk)
+$(call inherit-product, vendor/motorola/sm6435-common/sm6435-common-vendor.mk)
