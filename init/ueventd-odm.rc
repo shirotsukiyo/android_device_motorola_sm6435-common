@@ -47,3 +47,7 @@ external_firmware_handler /devices/platform/soc/soc:gh-secure-vm-loader@0/firmwa
 /sys/class/fingerprint/fpc1020 hw_reset   0660 system system
 /sys/class/fingerprint/fpc1020 irq        0660 system system
 /sys/class/fingerprint/fpc1020 irq_cnt    0660 system system
+
+# jiiov fingerprint device node permission
+/dev/jiiov_fp                             0660 system system
+

@@ -447,6 +447,7 @@ subsystem mem_buf_vm
 /dev/block/platform/soc/4744000.sdhci/by-name/frp       0600   system     system
 /dev/block/platform/soc/4804000.ufshc/by-name/frp       0600   system     system
 /dev/block/platform/soc/1bf8000.pcie/by-name/frp        0600   system     system
+/dev/block/platform/soc/f44000.sdhci/by-name/frp        0600   system     system
 
 # This is temporary while using SD card for initial bring-up
 /dev/block/platform/soc/8804000.sdhci/by-name/frp       0600   system     system
@@ -646,4 +647,3 @@ subsystem mem_buf_vm
 /sys/devices/platform/soc/*.spi/spi_master/spi0/spi0.*/touchscreen/*    double_tap_pressed    0664    system  system
 /sys/devices/platform/soc/*.spi/spi_master/spi0/spi0.*/touchscreen/*    udfps_enabled         0664    system  system
 /sys/devices/platform/soc/*.spi/spi_master/spi0/spi0.*/touchscreen/*    udfps_pressed         0664    system  system
-
