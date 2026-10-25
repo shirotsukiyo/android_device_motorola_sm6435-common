@@ -159,7 +159,6 @@ vendor.display.disable_scaler=0
 vendor.display.disable_sdr_dimming=1
 vendor.display.disable_sdr_histogram=1
 vendor.display.disable_stc_dimming=1
-vendor.display.enable_async_powermode=1
 vendor.display.enable_async_vds_creation=0
 vendor.display.enable_display_extensions=1
 vendor.display.enable_dpps_dynamic_fps=1
@@ -172,6 +171,8 @@ vendor.display.enable_rounded_corner=0
 vendor.display.hwc_disable_hdr=1
 vendor.display.idle_time=0
 vendor.display.use_smooth_motion=1
+vendor.display.mixed_colorspaces_support=1
+vendor.display.enable_async_powermode=0
 vendor.display.vds_allow_hwc=1
 
 # DPM
@@ -199,6 +200,11 @@ debug.sf.early.sf.duration=15666666
 debug.sf.earlyGl.app.duration=13666666
 debug.sf.earlyGl.sf.duration=15666666
 debug.sf.enable_gl_backpressure=1
+debug.sf.enable_vrr_config=false
+debug.sf.use_desiredpresenttime_as_candidate=1
+debug.sf.supportFpsForcedConversion=1
+debug.sf.fps_forced_conversion_pair=24:30,45:60
+debug.sf.enable_mot_small_area_detection=true
 debug.sf.hw=0
 debug.sf.late.app.duration=13666666
 debug.sf.late.sf.duration=15666666
@@ -206,16 +212,34 @@ debug.sf.predict_hwc_composition_strategy=0
 debug.sf.scroll_boost_refreshrate=120
 debug.sf.touch_boost_refreshrate=90
 debug.sf.use_phase_offsets_as_durations=1
+debug.sf.force_populate_color_modes=true
+debug.sf.frame_missed_log_jank_threshold=2
+debug.sf.early_app_phase_offset_ns=1666667
+debug.sf.early_gl_app_phase_offset_ns=1666667
+debug.sf.early_phase_offset_ns=-6000000
+debug.sf.early_gl_phase_offset_ns=-6000000
+debug.sf.high_fps_early_app_phase_offset_ns=-2000000
+debug.sf.high_fps_early_gl_app_phase_offset_ns=-2000000
+debug.sf.high_fps_early_gl_phase_offset_ns=-7000000
+debug.sf.high_fps_early_phase_offset_ns=-7000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-3000000
+debug.sf.late.app.duration=13666666
+debug.sf.early.app.duration=13666666
+debug.sf.earlyGl.app.duration=13666666
+debug.sf.early.sf.duration=10500000
+debug.sf.earlyGl.sf.duration=10500000
+debug.sf.late.sf.duration=10500000
+debug.hwui.surface_size_multiplier=144
 graphics.gpu.profiler.support=true
-persist.sys.sf.color_mode=0
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.force_brightness_capability=1
 persist.sys.sf.native_mode=1
+persist.sys.sf.color_mode=7
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 vendor.gralloc.disable_ubwc=0
-vendor.hw.sf.IdleLazyResetThresholdT=500
+vendor.hw.sf.IdleLazyResetThresholdT=50
 
 # IMS
 persist.vendor.lte.pco_supported=true
@@ -267,6 +291,10 @@ persist.vendor.radio.sib16_support=1
 ro.telephony.default_network=26,26
 ro.telephony.esim_slot_id=1
 
+# Sensor
+ro.vendor.display.sensortype=2
+ro.vendor.sensors.prox_for_call=true
+
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
@@ -274,10 +302,14 @@ sys.vendor.shutdown.waittime=500
 ro.hardware.soc.manufacturer=qcom
 ro.soc.manufacturer=QTI
 
+# Touch
+vendor.false_touch_quality=38
+
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Surfaceflinger
+ro.surface_flinger.vsync_event_phase_offset_ns=6666667
 ro.surface_flinger.enable_frame_rate_override=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.game_default_frame_rate_override=60
@@ -291,7 +323,6 @@ ro.surface_flinger.set_touch_timer_ms=1000
 ro.surface_flinger.supports_background_blur=1
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
-ro.surface_flinger.use_smart_90_for_video=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # USB
