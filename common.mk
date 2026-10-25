@@ -150,6 +150,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock
 
+# Prebuilt
+PRODUCT_CHECK_PREBUILT_MAX_PAGE_SIZE := false
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-impl-qti \
