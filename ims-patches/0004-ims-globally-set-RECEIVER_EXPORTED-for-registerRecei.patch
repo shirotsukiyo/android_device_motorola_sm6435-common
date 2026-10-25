@@ -11,8 +11,9 @@ Co-authored-by: Cosmin Tanislav <demonsingur@gmail.com>
 ---
  smali/com/qualcomm/ims/vt/LowBatteryHandler.smali  | 6 ++++--
  smali/org/codeaurora/ims/ImsCallModification.smali | 6 ++++--
+ smali/org/codeaurora/ims/ImsServiceSub.smali       | 6 ++++--
  smali/org/codeaurora/ims/ImsSubController.smali    | 6 ++++--
- 3 files changed, 12 insertions(+), 6 deletions(-)
+ 4 files changed, 16 insertions(+), 8 deletions(-)
 
 diff --git a/smali/com/qualcomm/ims/vt/LowBatteryHandler.smali b/smali/com/qualcomm/ims/vt/LowBatteryHandler.smali
 index 1b5620a..4c01e39 100644
@@ -62,6 +63,7 @@ index 128f82c..efee0fe 100644
  
      .line 141
      const-string p1, "Registering car mode receiver"
+
 diff --git a/smali/org/codeaurora/ims/ImsSubController.smali b/smali/org/codeaurora/ims/ImsSubController.smali
 index f237166..974f67f 100644
 --- a/smali/org/codeaurora/ims/ImsSubController.smali
@@ -80,9 +82,9 @@ index f237166..974f67f 100644
      invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
  
 -    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
-+    const/4 v3, 0x2
++    const/4 v2, 0x2
 +
-+    invoke-virtual {p1, v0, v1, v3}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
++    invoke-virtual {p1, v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
  
      .line 210
      iput-object p2, p0, Lorg/codeaurora/ims/ImsSubController;->mSenderRxrs:Ljava/util/List;
