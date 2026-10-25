@@ -254,6 +254,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_BUILD_PVMFW_IMAGE := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.face-V3-ndk.vendor \
+    android.hardware.biometrics.fingerprint-V3-ndk.vendor \
+    android.hardware.biometrics.common-V3-ndk \
+    android.hardware.biometrics.common.util.vendor \
+    android.hardware.biometrics.common.thread.vendor
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
