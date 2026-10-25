@@ -1,3 +1,0 @@
-# Fingerprint
-android.hardware.biometrics.fingerprint.IFingerprint/wrapper             u:object_r:hal_fingerprint_service:s0
-com.motorola.hardware.biometric.fingerprint.IMotoFingerPrint/wrapper     u:object_r:hal_fingerprint_service:s0
