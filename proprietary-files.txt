@@ -445,40 +445,11 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# Weaver
-vendor/bin/hw/android.hardware.weaver-service-spu-qti
-
-# Secure element
-vendor/bin/hw/android.hardware.secure_element-service.thales
-vendor/etc/permissions/android.hardware.opengles.aep.xml
-vendor/etc/libse-gto-hal.conf
-vendor/lib64/libspukeymintdeviceutils.so
-vendor/lib64/libspukeymintutils.so
-vendor/lib64/android.hardware.secure_element.thales.libse.so
-vendor/lib64/libextra-thales.so
-vendor/lib64/libnativecospatchkernel-thales.so
-vendor/lib64/libnativecosupdateapi-thales.so
-
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 vendor/lib64/libqtikeymint.so
-
-# Motorola health
-vendor/bin/hw/motorola.hardware.health-service
-vendor/bin/hw/motorola.hardware.health.storage-service
-vendor/etc/init/motorola.hardware.health.service.rc
-vendor/etc/init/motorola.hardware.health.storage.service.rc
-vendor/etc/vintf/manifest/motorola.hardware.health.service.xml
-vendor/etc/vintf/manifest/motorola.hardware.health.storage.service.xml
-vendor/lib64/libmotohid.so
-vendor/lib64/motorola.hardware.health.aidl-V1-ndk.so
-vendor/lib64/motorola.hardware.health.storage.aidl-V1-ndk.so
-vendor/lib64/motorola.hardware.health.storage@1.0.so
-
-# Qdutils
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Listen
 vendor/lib64/libcapiv2svacnnvendor.so
