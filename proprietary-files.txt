@@ -707,8 +707,6 @@ vendor/lib64/libsmemlog.so
 # QSPA
 system_ext/etc/init/qspa_system.rc
 system_ext/etc/qspa/qspa_default.rc
-vendor/etc/qspa/nav_disabled.rc
-vendor/etc/vintf/manifest/qspa/qspa-nav.xml
 vendor/etc/vintf/manifest/qspa/qspa-modem.xml
 
 # QSPM
